@@ -1,0 +1,510 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/negomi/react-burger-menu"
+
+    >react-burger-menu (v2.0.0)</a>
+</h1>
+<h4>An off-canvas sidebar component with a collection of effects and styles using CSS transitions and SVG path animations</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-burger-menu">module react-burger-menu</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-burger-menu.bubble">
+            function <span class="apidocSignatureSpan">react-burger-menu.</span>bubble
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-burger-menu.elastic">
+            function <span class="apidocSignatureSpan">react-burger-menu.</span>elastic
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-burger-menu.fallDown">
+            function <span class="apidocSignatureSpan">react-burger-menu.</span>fallDown
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-burger-menu.push">
+            function <span class="apidocSignatureSpan">react-burger-menu.</span>push
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-burger-menu.pushRotate">
+            function <span class="apidocSignatureSpan">react-burger-menu.</span>pushRotate
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-burger-menu.scaleDown">
+            function <span class="apidocSignatureSpan">react-burger-menu.</span>scaleDown
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-burger-menu.scaleRotate">
+            function <span class="apidocSignatureSpan">react-burger-menu.</span>scaleRotate
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-burger-menu.slide">
+            function <span class="apidocSignatureSpan">react-burger-menu.</span>slide
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-burger-menu.stack">
+            function <span class="apidocSignatureSpan">react-burger-menu.</span>stack
+            <span class="apidocSignatureSpan">(props)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-burger-menu.</span>baseStyles</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-burger-menu.baseStyles">module react-burger-menu.baseStyles</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-burger-menu.baseStyles.item">
+            function <span class="apidocSignatureSpan">react-burger-menu.baseStyles.</span>item
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-burger-menu.baseStyles.itemList">
+            function <span class="apidocSignatureSpan">react-burger-menu.baseStyles.</span>itemList
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-burger-menu.baseStyles.menu">
+            function <span class="apidocSignatureSpan">react-burger-menu.baseStyles.</span>menu
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-burger-menu.baseStyles.menuWrap">
+            function <span class="apidocSignatureSpan">react-burger-menu.baseStyles.</span>menuWrap
+            <span class="apidocSignatureSpan">(isOpen, width, right)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-burger-menu.baseStyles.overlay">
+            function <span class="apidocSignatureSpan">react-burger-menu.baseStyles.</span>overlay
+            <span class="apidocSignatureSpan">(isOpen)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-burger-menu" id="apidoc.module.react-burger-menu">module react-burger-menu</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-burger-menu.bubble" id="apidoc.element.react-burger-menu.bubble">
+        function <span class="apidocSignatureSpan">react-burger-menu.</span>bubble
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Menu(props) {
+  _classCallCheck(this, Menu);
+
+  _get(Object.getPrototypeOf(Menu.prototype), &#x27;constructor&#x27;, this).call(this, props);
+  this.state = {
+    isOpen: props &#x26;&#x26; typeof props.isOpen !== &#x27;undefined&#x27; ? props.isOpen : false
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-burger-menu.elastic" id="apidoc.element.react-burger-menu.elastic">
+        function <span class="apidocSignatureSpan">react-burger-menu.</span>elastic
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Menu(props) {
+  _classCallCheck(this, Menu);
+
+  _get(Object.getPrototypeOf(Menu.prototype), &#x27;constructor&#x27;, this).call(this, props);
+  this.state = {
+    isOpen: props &#x26;&#x26; typeof props.isOpen !== &#x27;undefined&#x27; ? props.isOpen : false
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-burger-menu.fallDown" id="apidoc.element.react-burger-menu.fallDown">
+        function <span class="apidocSignatureSpan">react-burger-menu.</span>fallDown
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Menu(props) {
+  _classCallCheck(this, Menu);
+
+  _get(Object.getPrototypeOf(Menu.prototype), &#x27;constructor&#x27;, this).call(this, props);
+  this.state = {
+    isOpen: props &#x26;&#x26; typeof props.isOpen !== &#x27;undefined&#x27; ? props.isOpen : false
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-burger-menu.push" id="apidoc.element.react-burger-menu.push">
+        function <span class="apidocSignatureSpan">react-burger-menu.</span>push
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Menu(props) {
+  _classCallCheck(this, Menu);
+
+  _get(Object.getPrototypeOf(Menu.prototype), &#x27;constructor&#x27;, this).call(this, props);
+  this.state = {
+    isOpen: props &#x26;&#x26; typeof props.isOpen !== &#x27;undefined&#x27; ? props.isOpen : false
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-burger-menu.pushRotate" id="apidoc.element.react-burger-menu.pushRotate">
+        function <span class="apidocSignatureSpan">react-burger-menu.</span>pushRotate
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Menu(props) {
+  _classCallCheck(this, Menu);
+
+  _get(Object.getPrototypeOf(Menu.prototype), &#x27;constructor&#x27;, this).call(this, props);
+  this.state = {
+    isOpen: props &#x26;&#x26; typeof props.isOpen !== &#x27;undefined&#x27; ? props.isOpen : false
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-burger-menu.scaleDown" id="apidoc.element.react-burger-menu.scaleDown">
+        function <span class="apidocSignatureSpan">react-burger-menu.</span>scaleDown
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Menu(props) {
+  _classCallCheck(this, Menu);
+
+  _get(Object.getPrototypeOf(Menu.prototype), &#x27;constructor&#x27;, this).call(this, props);
+  this.state = {
+    isOpen: props &#x26;&#x26; typeof props.isOpen !== &#x27;undefined&#x27; ? props.isOpen : false
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-burger-menu.scaleRotate" id="apidoc.element.react-burger-menu.scaleRotate">
+        function <span class="apidocSignatureSpan">react-burger-menu.</span>scaleRotate
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Menu(props) {
+  _classCallCheck(this, Menu);
+
+  _get(Object.getPrototypeOf(Menu.prototype), &#x27;constructor&#x27;, this).call(this, props);
+  this.state = {
+    isOpen: props &#x26;&#x26; typeof props.isOpen !== &#x27;undefined&#x27; ? props.isOpen : false
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-burger-menu.slide" id="apidoc.element.react-burger-menu.slide">
+        function <span class="apidocSignatureSpan">react-burger-menu.</span>slide
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Menu(props) {
+  _classCallCheck(this, Menu);
+
+  _get(Object.getPrototypeOf(Menu.prototype), &#x27;constructor&#x27;, this).call(this, props);
+  this.state = {
+    isOpen: props &#x26;&#x26; typeof props.isOpen !== &#x27;undefined&#x27; ? props.isOpen : false
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-burger-menu.stack" id="apidoc.element.react-burger-menu.stack">
+        function <span class="apidocSignatureSpan">react-burger-menu.</span>stack
+        <span class="apidocSignatureSpan">(props)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Menu(props) {
+  _classCallCheck(this, Menu);
+
+  _get(Object.getPrototypeOf(Menu.prototype), &#x27;constructor&#x27;, this).call(this, props);
+  this.state = {
+    isOpen: props &#x26;&#x26; typeof props.isOpen !== &#x27;undefined&#x27; ? props.isOpen : false
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-burger-menu.baseStyles" id="apidoc.module.react-burger-menu.baseStyles">module react-burger-menu.baseStyles</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-burger-menu.baseStyles.item" id="apidoc.element.react-burger-menu.baseStyles.item">
+        function <span class="apidocSignatureSpan">react-burger-menu.baseStyles.</span>item
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function item() {
+  return {
+    display: &#x27;block&#x27;,
+    outline: &#x27;none&#x27;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-burger-menu.baseStyles.itemList" id="apidoc.element.react-burger-menu.baseStyles.itemList">
+        function <span class="apidocSignatureSpan">react-burger-menu.baseStyles.</span>itemList
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function itemList() {
+  return {
+    height: &#x27;100%&#x27;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-burger-menu.baseStyles.menu" id="apidoc.element.react-burger-menu.baseStyles.menu">
+        function <span class="apidocSignatureSpan">react-burger-menu.baseStyles.</span>menu
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function menu() {
+  return {
+    height: &#x27;100%&#x27;,
+    boxSizing: &#x27;border-box&#x27;,
+    overflow: &#x27;auto&#x27;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-burger-menu.baseStyles.menuWrap" id="apidoc.element.react-burger-menu.baseStyles.menuWrap">
+        function <span class="apidocSignatureSpan">react-burger-menu.baseStyles.</span>menuWrap
+        <span class="apidocSignatureSpan">(isOpen, width, right)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function menuWrap(isOpen, width, right) {
+  return {
+    position: &#x27;fixed&#x27;,
+    right: right ? 0 : &#x27;inherit&#x27;,
+    zIndex: 2,
+    width: width,
+    height: &#x27;100%&#x27;,
+    MozTransform: isOpen ? &#x27;&#x27; : right ? &#x27;translate3d(100%, 0, 0)&#x27; : &#x27;translate3d(-100%, 0, 0)&#x27;,
+    MsTransform: isOpen ? &#x27;&#x27; : right ? &#x27;translate3d(100%, 0, 0)&#x27; : &#x27;translate3d(-100%, 0, 0)&#x27;,
+    OTransform: isOpen ? &#x27;&#x27; : right ? &#x27;translate3d(100%, 0, 0)&#x27; : &#x27;translate3d(-100%, 0, 0)&#x27;,
+    WebkitTransform: isOpen ? &#x27;&#x27; : right ? &#x27;translate3d(100%, 0, 0)&#x27; : &#x27;translate3d(-100%, 0, 0)&#x27;,
+    transform: isOpen ? &#x27;&#x27; : right ? &#x27;translate3d(100%, 0, 0)&#x27; : &#x27;translate3d(-100%, 0, 0)&#x27;,
+    transition: &#x27;all 0.5s&#x27;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-burger-menu.baseStyles.overlay" id="apidoc.element.react-burger-menu.baseStyles.overlay">
+        function <span class="apidocSignatureSpan">react-burger-menu.baseStyles.</span>overlay
+        <span class="apidocSignatureSpan">(isOpen)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function overlay(isOpen) {
+  return {
+    position: &#x27;fixed&#x27;,
+    zIndex: 1,
+    width: &#x27;100%&#x27;,
+    height: &#x27;100%&#x27;,
+    background: &#x27;rgba(0, 0, 0, 0.3)&#x27;,
+    opacity: isOpen ? 1 : 0,
+    MozTransform: isOpen ? &#x27;&#x27; : &#x27;translate3d(100%, 0, 0)&#x27;,
+    MsTransform: isOpen ? &#x27;&#x27; : &#x27;translate3d(100%, 0, 0)&#x27;,
+    OTransform: isOpen ? &#x27;&#x27; : &#x27;translate3d(100%, 0, 0)&#x27;,
+    WebkitTransform: isOpen ? &#x27;&#x27; : &#x27;translate3d(100%, 0, 0)&#x27;,
+    transform: isOpen ? &#x27;&#x27; : &#x27;translate3d(100%, 0, 0)&#x27;,
+    transition: isOpen ? &#x27;opacity 0.3s&#x27; : &#x27;opacity 0.3s, transform 0s 0.3s&#x27;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
